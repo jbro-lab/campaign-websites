@@ -1,19 +1,440 @@
 <!DOCTYPE html>
-<html lang="en" data-page="home">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speedy Campaign Websites</title>
-  <meta name="description" content="">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link id="google-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <nav class="navbar" id="navbar"></nav>
-  <main id="main-content"></main>
-  <footer class="footer" id="footer"></footer>
-  <script src="js/main.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Speedy Campaign Websites — Websites for Down-Ballot Candidates
+    </title>
+    <meta
+      name="description"
+      content="Campaign websites for down-ballot candidates — city council, school board, county commission, and state legislature. Fixed pricing, mobile-first, live in days."
+    />
+    <link rel="canonical" href="https://speedycampaignsites.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Speedy Campaign Websites — Websites for Down-Ballot Candidates"
+    />
+    <meta
+      property="og:description"
+      content="Campaign websites for down-ballot candidates — city council, school board, county commission, and state legislature. Fixed pricing, mobile-first, live in days."
+    />
+    <meta property="og:url" content="https://speedycampaignsites.com/" />
+    <meta property="og:site_name" content="Speedy Campaign Websites" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Speedy Campaign Websites — Websites for Down-Ballot Candidates"
+    />
+    <meta
+      name="twitter:description"
+      content="Campaign websites for down-ballot candidates — city council, school board, county commission, and state legislature. Fixed pricing, mobile-first, live in days."
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Speedy Campaign Websites",
+        "description": "Campaign websites for down-ballot candidates — city council, school board, county commission, and state legislature. Fixed pricing, mobile-first, live in days.",
+        "url": "https://speedycampaignsites.com",
+        "email": "hello@speedycampaignsites.com",
+        "serviceType": "Web Design",
+        "areaServed": "US",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Campaign Website Plans",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Self-Hosted",
+              "price": "750",
+              "priceCurrency": "USD",
+              "description": "We build it, you host it. Perfect for campaigns with technical volunteers."
+            },
+            {
+              "@type": "Offer",
+              "name": "Managed",
+              "price": "750",
+              "priceCurrency": "USD",
+              "description": "We build it, host it, and keep it running. You focus on the campaign. Plus $100/month hosting."
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="nav-brand">
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect width="36" height="36" rx="6" fill="#C42032" />
+            <path
+              d="M20.5 6L10 20h6.5L14.5 30 26 16h-7l1.5-10z"
+              fill="#fff"
+              stroke="#fff"
+              stroke-width="0.5"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="nav-brand-text">Speedy Campaign Websites</span>
+        </a>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#templates" data-section="templates">Templates</a></li>
+          <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li>
+            <a
+              href="mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry"
+              class="nav-cta"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <p class="hero-eyebrow fade-in">
+            Websites for Down-Ballot Candidates
+          </p>
+          <h1 class="fade-in">
+            You're Running for Local Office. Your Website Should Already Be
+            Live.
+          </h1>
+          <p class="hero-sub fade-in">
+            Professional, mobile-first websites for city council, school board,
+            county, and state legislative candidates. Fixed pricing. Live in
+            days — not weeks.
+          </p>
+          <div class="hero-ctas fade-in">
+            <a href="#templates" class="btn btn-primary">See Templates</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us / Features -->
+      <section class="section" id="features">
+        <div class="container">
+          <h2 class="section-title fade-in">Why Speedy Campaign Websites?</h2>
+          <p class="section-subtitle fade-in">
+            Down-ballot races don't get big-budget digital teams. We give local
+            candidates a professional web presence without the overhead.
+          </p>
+          <div class="features-grid">
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">⚡</div>
+              <h3>Fast Turnaround</h3>
+              <p>
+                Your site goes live in days, not weeks. We know campaigns run on
+                tight timelines.
+              </p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">📱</div>
+              <h3>Mobile-First</h3>
+              <p>
+                Over 70% of voters browse on their phones. Every template is
+                built mobile-first.
+              </p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">💲</div>
+              <h3>Fixed Pricing</h3>
+              <p>
+                One price, no hourly billing, no scope creep. You know the cost
+                before we start.
+              </p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">🏛️</div>
+              <h3>Built for Down-Ballot Races</h3>
+              <p>
+                City council, school board, county commission, state rep — we
+                specialize in the races where every dollar and every day counts.
+              </p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">✍️</div>
+              <h3>Your Message, Your Words</h3>
+              <p>
+                You provide the content and messaging. We build the site around
+                your platform — we don't write it.
+              </p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">🔧</div>
+              <h3>Easy to Update</h3>
+              <p>
+                Need to add an event or endorsement? Simple content updates keep
+                your site current through election day.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Templates -->
+      <section class="section section-alt" id="templates">
+        <div class="container">
+          <h2 class="section-title fade-in">Our Templates</h2>
+          <p class="section-subtitle fade-in">
+            Choose a design, provide your content, and we'll do the rest.
+          </p>
+          <div class="templates-grid">
+            <article class="template-card fade-in">
+              <div class="template-placeholder">
+                <span class="template-placeholder-text">Preview</span>
+                <span class="template-placeholder-name">Single Page</span>
+              </div>
+              <div class="template-card-body">
+                <h3>Single Page</h3>
+                <p>
+                  Everything on one scrolling page. Perfect for first-time
+                  candidates who want a clean, simple presence.
+                </p>
+                <div class="template-chips">
+                  <span class="template-chip">Single scroll</span>
+                  <span class="template-chip">Quick setup</span>
+                  <span class="template-chip">All-in-one</span>
+                </div>
+                <a
+                  href="/campaign-templates/single-page-hero/index.html"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+              </div>
+            </article>
+            <article class="template-card fade-in">
+              <div class="template-placeholder">
+                <span class="template-placeholder-text">Preview</span>
+                <span class="template-placeholder-name">Multi-Page</span>
+              </div>
+              <div class="template-card-body">
+                <h3>Multi-Page</h3>
+                <p>
+                  Dedicated pages for issues, endorsements, events, and more.
+                  Ideal for candidates with a detailed platform.
+                </p>
+                <div class="template-chips">
+                  <span class="template-chip">Multiple pages</span>
+                  <span class="template-chip">Issue detail</span>
+                  <span class="template-chip">Event calendar</span>
+                </div>
+                <a
+                  href="/campaign-templates/multi-page-hero/index.html"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+              </div>
+            </article>
+            <article class="template-card fade-in">
+              <div class="template-placeholder">
+                <span class="template-placeholder-text">Preview</span>
+                <span class="template-placeholder-name">Bold Hero</span>
+              </div>
+              <div class="template-card-body">
+                <h3>Bold Hero</h3>
+                <p>
+                  A striking full-screen hero image with bold typography. Makes
+                  a strong first impression.
+                </p>
+                <div class="template-chips">
+                  <span class="template-chip">Full-screen hero</span>
+                  <span class="template-chip">Bold typography</span>
+                  <span class="template-chip">High impact</span>
+                </div>
+                <a
+                  href="/campaign-templates/bold-hero/index.html"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="templates-grid-bottom">
+            <article class="template-card fade-in">
+              <div class="template-placeholder">
+                <span class="template-placeholder-text">Preview</span>
+                <span class="template-placeholder-name">Clean Minimal</span>
+              </div>
+              <div class="template-card-body">
+                <h3>Clean Minimal</h3>
+                <p>
+                  Understated elegance with clean lines and plenty of
+                  whitespace. Lets your message breathe.
+                </p>
+                <div class="template-chips">
+                  <span class="template-chip">Minimal design</span>
+                  <span class="template-chip">Clean layout</span>
+                  <span class="template-chip">Professional</span>
+                </div>
+                <a
+                  href="/campaign-templates/clean-minimal/index.html"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+              </div>
+            </article>
+            <article class="template-card fade-in">
+              <div class="template-placeholder">
+                <span class="template-placeholder-text">Preview</span>
+                <span class="template-placeholder-name">Community Focus</span>
+              </div>
+              <div class="template-card-body">
+                <h3>Community Focus</h3>
+                <p>
+                  Warm, approachable design centered on community connection and
+                  grassroots engagement.
+                </p>
+                <div class="template-chips">
+                  <span class="template-chip">Community feel</span>
+                  <span class="template-chip">Warm tones</span>
+                  <span class="template-chip">Grassroots</span>
+                </div>
+                <a
+                  href="/campaign-templates/clean-minimal/index.html"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="section" id="portfolio">
+        <div class="container">
+          <h2 class="section-title fade-in">Our Work</h2>
+          <p class="section-subtitle fade-in">
+            Campaigns we've helped launch online.
+          </p>
+          <div class="portfolio-empty fade-in">
+            Portfolio coming soon — we're currently building sites for campaigns
+            across the state. Check back for live examples!
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="section section-navy contact-section" id="contact">
+        <div class="container">
+          <h2 class="section-title fade-in">
+            Ready to Launch Your Campaign Site?
+          </h2>
+          <p class="fade-in">
+            Whether you're running for city council or state legislature, we'll
+            get your site live fast so you can focus on voters.
+          </p>
+          <a
+            href="mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry"
+            class="btn btn-primary fade-in"
+            >Get Started</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect width="36" height="36" rx="6" fill="#C42032" />
+                <path
+                  d="M20.5 6L10 20h6.5L14.5 30 26 16h-7l1.5-10z"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="0.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="footer-brand-text">Speedy Campaign Websites</span>
+            </div>
+            <p class="footer-tagline">
+              Campaign websites for down-ballot candidates, built fast.
+            </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#templates">Templates</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li>
+              <a
+                href="mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Speedy Campaign Websites</span>
+          <p class="footer-legal">
+            Speedy Campaign Websites is a web development service. We do not
+            author, endorse, or take responsibility for any political content
+            displayed on websites we build.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

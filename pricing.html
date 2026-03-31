@@ -1,19 +1,273 @@
 <!DOCTYPE html>
-<html lang="en" data-page="pricing">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing — Speedy Campaign Websites</title>
-  <meta name="description" content="">
+  <meta name="description" content="Simple, transparent pricing for campaign websites. Self-Hosted from $750 or Managed at $750 + $100/month. No hidden fees.">
+  <link rel="canonical" href="https://speedycampaignsites.com/pricing.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pricing — Speedy Campaign Websites">
+  <meta property="og:description" content="Simple, transparent pricing for campaign websites. Self-Hosted from $750 or Managed at $750 + $100/month. No hidden fees.">
+  <meta property="og:url" content="https://speedycampaignsites.com/pricing.html">
+  <meta property="og:site_name" content="Speedy Campaign Websites">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pricing — Speedy Campaign Websites">
+  <meta name="twitter:description" content="Simple, transparent pricing for campaign websites. Self-Hosted from $750 or Managed at $750 + $100/month. No hidden fees.">
+
+  <!-- Schema.org FAQ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do I need to provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your campaign provides all text content (bio, issues, endorsements), photos, and any specific design preferences. We handle everything technical — building the site, making it responsive, and getting it online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast can my site be live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most sites launch within 3–5 business days after we receive your content. If you have your materials ready, we can often move faster."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch templates later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Since all content lives in a structured data file, we can re-skin your site with a different template. For Managed plans, this is included. For Self-Hosted, a small fee may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you write my campaign's issue positions or messaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We are a web development service only. Your campaign is responsible for all political content and messaging. We build the website to present your content professionally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after the election?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For Self-Hosted plans, the site is yours to keep or take down. For Managed plans, you can cancel the monthly hosting at any time — we'll help you export your site files if you'd like to keep them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I update the site myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The sites are built with a simple content file (JSON) that controls all text. If you're comfortable editing a text file, you can make updates yourself. On Managed plans, just email us changes and we'll handle it."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link id="google-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <nav class="navbar" id="navbar"></nav>
-  <main id="main-content"></main>
-  <footer class="footer" id="footer"></footer>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#C42032"/><path d="M20.5 6L10 20h6.5L14.5 30 26 16h-7l1.5-10z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-linejoin="round"/></svg>
+        <span class="nav-brand-text">Speedy Campaign Websites</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#templates">Templates</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-in">Simple, Transparent Pricing</h1>
+        <p class="fade-in">Two options. No hidden fees. Pick the plan that fits your campaign.</p>
+      </div>
+    </section>
+
+    <!-- Pricing Cards + FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="pricing-grid">
+
+          <!-- Self-Hosted -->
+          <article class="pricing-card fade-in">
+            <h3>Self-Hosted</h3>
+            <div class="pricing-price">$750</div>
+            <p class="pricing-billing">one-time payment</p>
+            <p class="pricing-description">We build it, you host it. Perfect for campaigns with technical volunteers.</p>
+            <ul class="pricing-list">
+              <li><span class="check">&#10003;</span><span>Custom campaign website from any template</span></li>
+              <li><span class="check">&#10003;</span><span>Content populated from your materials</span></li>
+              <li><span class="check">&#10003;</span><span>Mobile-responsive design</span></li>
+              <li><span class="check">&#10003;</span><span>1 month of bug-fix warranty</span></li>
+              <li><span class="check">&#10003;</span><span>All source files delivered to you</span></li>
+            </ul>
+            <hr class="pricing-divider">
+            <ul class="pricing-list">
+              <li><span class="x-mark">&#10005;</span><span>Hosting or domain setup</span></li>
+              <li><span class="x-mark">&#10005;</span><span>Ongoing maintenance</span></li>
+              <li><span class="x-mark">&#10005;</span><span>Content updates after delivery</span></li>
+            </ul>
+            <a href="mailto:hello@speedycampaignsites.com?subject=Self-Hosted%20Plan%20Inquiry" class="btn btn-outline-dark">Get Started</a>
+          </article>
+
+          <!-- Managed -->
+          <article class="pricing-card highlighted fade-in">
+            <div class="pricing-badge">Most Popular</div>
+            <h3>Managed</h3>
+            <div class="pricing-price">$750<span class="suffix"> + $100/mo</span></div>
+            <p class="pricing-billing">setup + monthly hosting</p>
+            <p class="pricing-description">We build it, host it, and keep it running. You focus on the campaign.</p>
+            <ul class="pricing-list">
+              <li><span class="check">&#10003;</span><span>Everything in Self-Hosted</span></li>
+              <li><span class="check">&#10003;</span><span>Domain setup and hosting included</span></li>
+              <li><span class="check">&#10003;</span><span>Ongoing content updates</span></li>
+              <li><span class="check">&#10003;</span><span>SSL certificate and security</span></li>
+              <li><span class="check">&#10003;</span><span>Uptime monitoring</span></li>
+              <li><span class="check">&#10003;</span><span>Priority support through election day</span></li>
+            </ul>
+            <hr class="pricing-divider">
+            <ul class="pricing-list">
+              <li><span class="x-mark">&#10005;</span><span>Domain registration (we'll help you pick one)</span></li>
+            </ul>
+            <a href="mailto:hello@speedycampaignsites.com?subject=Managed%20Plan%20Inquiry" class="btn btn-primary">Get Started</a>
+          </article>
+
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer-box fade-in">
+          <h3>Content Disclaimer</h3>
+          <p>All campaign content — including issue positions, biography, endorsements, and messaging — must be provided by the campaign. Speedy Campaign Websites builds and maintains the technical website only. We do not author, endorse, or take responsibility for any political content or messaging displayed on sites we build.</p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-section">
+          <h2 class="fade-in">Frequently Asked Questions</h2>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span>What do I need to provide?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Your campaign provides all text content (bio, issues, endorsements), photos, and any specific design preferences. We handle everything technical — building the site, making it responsive, and getting it online.</div>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span>How fast can my site be live?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Most sites launch within 3–5 business days after we receive your content. If you have your materials ready, we can often move faster.</div>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I switch templates later?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Yes! Since all content lives in a structured data file, we can re-skin your site with a different template. For Managed plans, this is included. For Self-Hosted, a small fee may apply.</div>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you write my campaign's issue positions or messaging?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">No. We are a web development service only. Your campaign is responsible for all political content and messaging. We build the website to present your content professionally.</div>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span>What happens after the election?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">For Self-Hosted plans, the site is yours to keep or take down. For Managed plans, you can cancel the monthly hosting at any time — we'll help you export your site files if you'd like to keep them.</div>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I update the site myself?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">The sites are built with a simple content file (JSON) that controls all text. If you're comfortable editing a text file, you can make updates yourself. On Managed plans, just email us changes and we'll handle it.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#C42032"/><path d="M20.5 6L10 20h6.5L14.5 30 26 16h-7l1.5-10z" fill="#fff" stroke="#fff" stroke-width="0.5" stroke-linejoin="round"/></svg>
+            <span class="footer-brand-text">Speedy Campaign Websites</span>
+          </div>
+          <p class="footer-tagline">Campaign websites for down-ballot candidates, built fast.</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#templates">Templates</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry">Get Started</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Speedy Campaign Websites</span>
+        <p class="footer-legal">Speedy Campaign Websites is a web development service. We do not author, endorse, or take responsibility for any political content displayed on websites we build.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
