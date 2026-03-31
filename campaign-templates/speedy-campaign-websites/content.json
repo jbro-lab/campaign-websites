@@ -1,0 +1,216 @@
+{
+  "site": {
+    "title": "Speedy Campaign Websites",
+    "metaDescription": "Professional campaign websites built fast. Fixed pricing, mobile-first, ready in days — not weeks. Templates designed for local and state races."
+  },
+  "theme": {
+    "colors": {
+      "primary": "#1B3A5C",
+      "primaryDark": "#0F2440",
+      "primaryLight": "#2A5A8C",
+      "secondary": "#C42032",
+      "secondaryDark": "#9E1A28",
+      "text": "#1a1a2e",
+      "textLight": "#555555",
+      "bg": "#ffffff",
+      "bgAlt": "#f4f6f8",
+      "white": "#ffffff"
+    },
+    "headingFont": "Oswald",
+    "bodyFont": "Inter",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+  },
+  "hero": {
+    "eyebrow": "Campaign Websites, Done Right",
+    "headline": "Your Campaign Deserves a Website That Works as Hard as You Do",
+    "subheadline": "Professional, mobile-first campaign websites built in days — not weeks. Fixed pricing. No surprises.",
+    "primaryCta": {
+      "text": "See Templates",
+      "href": "#templates"
+    },
+    "secondaryCta": {
+      "text": "View Pricing",
+      "href": "pricing.html"
+    }
+  },
+  "valueProp": {
+    "title": "Why Speedy Campaign Websites?",
+    "subtitle": "We build websites for candidates who need to hit the ground running.",
+    "features": [
+      {
+        "icon": "⚡",
+        "title": "Fast Turnaround",
+        "description": "Your site goes live in days, not weeks. We know campaigns run on tight timelines."
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile-First",
+        "description": "Over 70% of voters browse on their phones. Every template is built mobile-first."
+      },
+      {
+        "icon": "💲",
+        "title": "Fixed Pricing",
+        "description": "One price, no hourly billing, no scope creep. You know the cost before we start."
+      },
+      {
+        "icon": "🏛️",
+        "title": "Built for Local Races",
+        "description": "Designed specifically for city council, school board, county, and state legislative races."
+      },
+      {
+        "icon": "✍️",
+        "title": "Your Message, Your Words",
+        "description": "You provide the content and messaging. We build the site around your platform — we don't write it."
+      },
+      {
+        "icon": "🔧",
+        "title": "Easy to Update",
+        "description": "Need to add an event or endorsement? Simple content updates keep your site current through election day."
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "single-page",
+      "name": "Single Page",
+      "description": "Everything on one scrolling page. Perfect for first-time candidates who want a clean, simple presence.",
+      "demoHref": "../single-page/index.html",
+      "screenshotSrc": "",
+      "features": ["Single scroll", "Quick setup", "All-in-one"]
+    },
+    {
+      "id": "multi-page",
+      "name": "Multi-Page",
+      "description": "Dedicated pages for issues, endorsements, events, and more. Ideal for candidates with a detailed platform.",
+      "demoHref": "../multi-page/index.html",
+      "screenshotSrc": "",
+      "features": ["Multiple pages", "Issue detail", "Event calendar"]
+    },
+    {
+      "id": "bold-hero",
+      "name": "Bold Hero",
+      "description": "A striking full-screen hero image with bold typography. Makes a strong first impression.",
+      "demoHref": "../template-3-bold-hero/index.html",
+      "screenshotSrc": "",
+      "features": ["Full-screen hero", "Bold typography", "High impact"]
+    },
+    {
+      "id": "clean-minimal",
+      "name": "Clean Minimal",
+      "description": "Understated elegance with clean lines and plenty of whitespace. Lets your message breathe.",
+      "demoHref": "../template-4-clean-minimal/index.html",
+      "screenshotSrc": "",
+      "features": ["Minimal design", "Clean layout", "Professional"]
+    },
+    {
+      "id": "community-focus",
+      "name": "Community Focus",
+      "description": "Warm, approachable design centered on community connection and grassroots engagement.",
+      "demoHref": "../template-5-community-focus/index.html",
+      "screenshotSrc": "",
+      "features": ["Community feel", "Warm tones", "Grassroots"]
+    }
+  ],
+  "portfolio": {
+    "title": "Our Work",
+    "subtitle": "Campaigns we've helped launch online.",
+    "emptyMessage": "Portfolio coming soon — we're currently building sites for campaigns across the state. Check back for live examples!",
+    "items": []
+  },
+  "contact": {
+    "title": "Ready to Launch Your Campaign Site?",
+    "subtitle": "Get in touch and we'll have your site live in days.",
+    "email": "hello@speedycampaignwebsites.com",
+    "ctaText": "Get Started",
+    "ctaHref": "mailto:hello@speedycampaignwebsites.com?subject=Campaign%20Website%20Inquiry"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Two options. No hidden fees. Pick the plan that fits your campaign.",
+    "tiers": [
+      {
+        "name": "Self-Hosted",
+        "price": "$750",
+        "billing": "one-time payment",
+        "description": "We build it, you host it. Perfect for campaigns with technical volunteers.",
+        "highlighted": false,
+        "badge": "",
+        "includes": [
+          "Custom campaign website from any template",
+          "Content populated from your materials",
+          "Mobile-responsive design",
+          "1 month of bug-fix warranty",
+          "All source files delivered to you"
+        ],
+        "excludes": [
+          "Hosting or domain setup",
+          "Ongoing maintenance",
+          "Content updates after delivery"
+        ],
+        "ctaText": "Get Started",
+        "ctaHref": "mailto:hello@speedycampaignwebsites.com?subject=Self-Hosted%20Plan%20Inquiry"
+      },
+      {
+        "name": "Managed",
+        "price": "$750",
+        "priceSuffix": " + $100/mo",
+        "billing": "setup + monthly hosting",
+        "description": "We build it, host it, and keep it running. You focus on the campaign.",
+        "highlighted": true,
+        "badge": "Most Popular",
+        "includes": [
+          "Everything in Self-Hosted",
+          "Domain setup and hosting included",
+          "Ongoing content updates",
+          "SSL certificate and security",
+          "Uptime monitoring",
+          "Priority support through election day"
+        ],
+        "excludes": ["Domain registration (we'll help you pick one)"],
+        "ctaText": "Get Started",
+        "ctaHref": "mailto:hello@speedycampaignwebsites.com?subject=Managed%20Plan%20Inquiry"
+      }
+    ],
+    "disclaimer": "All campaign content — including issue positions, biography, endorsements, and messaging — must be provided by the campaign. Speedy Campaign Websites builds and maintains the technical website only. We do not author, endorse, or take responsibility for any political content or messaging displayed on sites we build.",
+    "faq": [
+      {
+        "question": "What do I need to provide?",
+        "answer": "Your campaign provides all text content (bio, issues, endorsements), photos, and any specific design preferences. We handle everything technical — building the site, making it responsive, and getting it online."
+      },
+      {
+        "question": "How fast can my site be live?",
+        "answer": "Most sites launch within 3–5 business days after we receive your content. If you have your materials ready, we can often move faster."
+      },
+      {
+        "question": "Can I switch templates later?",
+        "answer": "Yes! Since all content lives in a structured data file, we can re-skin your site with a different template. For Managed plans, this is included. For Self-Hosted, a small fee may apply."
+      },
+      {
+        "question": "Do you write my campaign's issue positions or messaging?",
+        "answer": "No. We are a web development service only. Your campaign is responsible for all political content and messaging. We build the website to present your content professionally."
+      },
+      {
+        "question": "What happens after the election?",
+        "answer": "For Self-Hosted plans, the site is yours to keep or take down. For Managed plans, you can cancel the monthly hosting at any time — we'll help you export your site files if you'd like to keep them."
+      },
+      {
+        "question": "Can I update the site myself?",
+        "answer": "The sites are built with a simple content file (JSON) that controls all text. If you're comfortable editing a text file, you can make updates yourself. On Managed plans, just email us changes and we'll handle it."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Professional campaign websites, built fast.",
+    "nav": [
+      { "text": "Home", "href": "index.html" },
+      { "text": "Templates", "href": "index.html#templates" },
+      { "text": "Pricing", "href": "pricing.html" },
+      {
+        "text": "Get Started",
+        "href": "mailto:hello@speedycampaignwebsites.com?subject=Campaign%20Website%20Inquiry"
+      }
+    ],
+    "copyright": "Speedy Campaign Websites",
+    "legal": "Speedy Campaign Websites is a web development service. We do not author, endorse, or take responsibility for any political content displayed on websites we build."
+  }
+}

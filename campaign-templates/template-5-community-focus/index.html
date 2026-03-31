@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Website</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="google-fonts" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="nav-brand" id="nav-brand"></a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#endorsements">Endorsements</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#cta" class="nav-donate-btn">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-photo-circle" id="hero-photo">
+          <div class="hero-photo-placeholder">Photo</div>
+        </div>
+        <h1 id="hero-name"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-outline-white">Meet <span id="hero-first-name"></span></a>
+          <a href="#events" class="btn btn-secondary">Upcoming Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMMUNITY VOICES / ENDORSEMENTS ========== -->
+  <section class="endorsements-section" id="endorsements">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="endorsements-title"></h2>
+      </div>
+      <div class="masonry-grid" id="endorsements-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== UPCOMING EVENTS ========== -->
+  <section class="events-section" id="events">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="events-title"></h2>
+      </div>
+      <div class="events-grid" id="events-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo" id="about-photo">
+          <div class="about-photo-placeholder">Community Photo<br>500 × 400px</div>
+        </div>
+        <div class="about-text">
+          <h2 id="about-title" class="fade-in"></h2>
+          <div id="about-content" class="fade-in"></div>
+          <h3 id="about-why-title" class="fade-in"></h3>
+          <p id="about-why-text" class="fade-in"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ISSUES — Accordion ========== -->
+  <section class="issues-section" id="issues">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="issues-title"></h2>
+      </div>
+      <div class="accordion" id="accordion"></div>
+    </div>
+  </section>
+
+  <!-- ========== GET INVOLVED CTA ========== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="cta-title"></h2>
+      </div>
+      <div class="cta-cards" id="cta-cards"></div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <h3>Get in Touch</h3>
+      <div class="footer-contact" id="footer-contact"></div>
+      <div class="footer-social" id="footer-social"></div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer" id="footer-disclaimer"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

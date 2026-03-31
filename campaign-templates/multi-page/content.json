@@ -1,0 +1,201 @@
+{
+  "site": {
+    "title": "Jane Smith for City Council",
+    "metaDescription": "Jane Smith is running for City Council — fighting for better schools, safer neighborhoods, and a stronger community. Learn more and get involved."
+  },
+  "theme": {
+    "palette": "navy-red",
+    "headingFont": "Merriweather",
+    "bodyFont": "Inter",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;800;900&display=swap"
+  },
+  "candidate": {
+    "name": "Jane Smith",
+    "office": "Candidate for City Council — District 5",
+    "tagline": "Building a stronger community for every family. Together, we can make District 5 a place where everyone thrives.",
+    "navBrand": "Smith for Council",
+    "heroImage": "",
+    "aboutImage": ""
+  },
+  "about": {
+    "title": "Meet Jane",
+    "paragraphs": [
+      "Jane Smith has lived in District 5 for over 15 years. A public school parent, small business owner, and longtime community volunteer, she knows firsthand the challenges facing local families — from overcrowded classrooms to aging infrastructure.",
+      "After serving on the PTA, leading the neighborhood association, and organizing the annual community cleanup for the past eight years, Jane decided it was time to bring her passion for problem-solving to City Hall.",
+      "Jane holds a degree in Public Administration from State University and spent a decade in nonprofit management before starting her own consulting firm. She lives in Maplewood with her husband, two kids, and a very opinionated rescue dog named Biscuit."
+    ]
+  },
+  "issues": {
+    "title": "Priorities",
+    "items": [
+      {
+        "icon": "\ud83c\udfeb",
+        "title": "Better Schools",
+        "description": "Every child in our district deserves a quality education. Jane will fight for fair school funding, smaller class sizes, and up-to-date facilities and technology.",
+        "detail": "Jane's plan includes advocating for a 15% increase in per-pupil funding, expanding after-school programs, and ensuring every school building meets modern safety and accessibility standards."
+      },
+      {
+        "icon": "\ud83d\udee1\ufe0f",
+        "title": "Public Safety",
+        "description": "Safer neighborhoods start with community-based solutions. Jane supports investing in community policing, better street lighting, and youth diversion programs.",
+        "detail": "Jane will push for a dedicated neighborhood liaison officer program and increased funding for mental health crisis response teams that work alongside first responders."
+      },
+      {
+        "icon": "\ud83c\udfe0",
+        "title": "Affordable Housing",
+        "description": "Working families shouldn't be priced out of our community. Jane will push for affordable housing policies that keep long-time residents in their homes.",
+        "detail": "Jane supports inclusionary zoning, expanding the community land trust, and creating a tenant protection ordinance to prevent unjust evictions and rent gouging."
+      },
+      {
+        "icon": "\ud83c\udf33",
+        "title": "Parks & Green Space",
+        "description": "Our parks and trails are community treasures. Jane will champion increased park maintenance funding and new green spaces in underserved areas.",
+        "detail": "Jane's vision includes a new community garden program, restoring the Riverside Trail, and planting 1,000 trees in District 5 over the next four years."
+      },
+      {
+        "icon": "\ud83d\ude8c",
+        "title": "Transportation",
+        "description": "Getting around our district should be easy and affordable. Jane supports expanded bus routes, safer bike lanes, and fixing our roads and sidewalks.",
+        "detail": "Priorities include extending the Route 7 bus line to cover the south side, adding protected bike lanes on Main Street, and a comprehensive pothole repair initiative."
+      },
+      {
+        "icon": "\ud83d\udcbc",
+        "title": "Local Economy",
+        "description": "Small businesses are the backbone of District 5. Jane will advocate for reducing red tape, supporting local entrepreneurs, and attracting good-paying jobs.",
+        "detail": "Jane will work to establish a small business incubator, streamline the permitting process, and create a \"Buy Local\" initiative to support neighborhood businesses."
+      }
+    ]
+  },
+  "endorsements": {
+    "title": "Endorsements",
+    "items": [
+      {
+        "quote": "Jane is exactly the kind of leader District 5 needs — someone who listens, shows up, and gets things done. She has my full support.",
+        "name": "Mayor Robert Chen",
+        "title": "Mayor, City of Springfield"
+      },
+      {
+        "quote": "As a fellow parent and educator, I know Jane will always put our children's futures first. She's been a tireless advocate for our schools for years.",
+        "name": "Dr. Maria Garcia",
+        "title": "Superintendent, Springfield Schools"
+      },
+      {
+        "quote": "Jane understands the needs of small business owners because she is one. She'll bring a practical, results-oriented approach to city government.",
+        "name": "Tom Nguyen",
+        "title": "President, District 5 Business Association"
+      },
+      {
+        "quote": "I've worked alongside Jane for years in our neighborhood association. Her dedication to this community is genuine, and her energy is unmatched.",
+        "name": "Sarah Johnson",
+        "title": "Maplewood Neighborhood Association"
+      },
+      {
+        "quote": "Jane has been a champion for green spaces and environmental sustainability in our district. She'll make sure development doesn't come at the cost of our natural resources.",
+        "name": "David Park",
+        "title": "Director, Springfield Environmental Coalition"
+      },
+      {
+        "quote": "As a union member and working parent, I know Jane will fight for fair wages and working conditions. She's one of us.",
+        "name": "Lisa Martinez",
+        "title": "Local 302, Service Workers Union"
+      }
+    ]
+  },
+  "volunteer": {
+    "title": "Get Involved",
+    "description": "This campaign is powered by people like you. Whether you can knock on doors, make phone calls, host a yard sign, or spread the word to your neighbors — every bit of help makes a difference.",
+    "signupUrl": "https://example.com/volunteer-signup",
+    "waysToHelp": [
+      {
+        "icon": "\ud83d\udeaa",
+        "title": "Knock on Doors",
+        "description": "The most effective way to win an election is face-to-face conversations with voters. Join a weekend canvass and help us reach every door in District 5."
+      },
+      {
+        "icon": "\ud83d\udcde",
+        "title": "Make Phone Calls",
+        "description": "Can't make it out in person? You can phone bank from the comfort of your home. We'll provide the script and the list — you provide the enthusiasm."
+      },
+      {
+        "icon": "\ud83e\udea7",
+        "title": "Host a Yard Sign",
+        "description": "Show your support! Put a Jane Smith yard sign in your front yard or window. Contact us and we'll deliver one to you."
+      }
+    ]
+  },
+  "donate": {
+    "title": "Support the Campaign",
+    "description": "Grassroots donations power this campaign. Every dollar helps us reach more voters, print more signs, and fight for the issues that matter to District 5 families. No amount is too small.",
+    "url": "https://example.com/donate",
+    "usageTitle": "Where Your Money Goes",
+    "usageItems": [
+      {
+        "icon": "\ud83d\udcec",
+        "title": "Voter Outreach",
+        "description": "Direct mail, door-knocking materials, and phone banking to make sure every voter in District 5 hears Jane's message."
+      },
+      {
+        "icon": "\ud83e\udea7",
+        "title": "Yard Signs & Visibility",
+        "description": "Yard signs, banners, and community event booths so voters know Jane is running and where she stands."
+      },
+      {
+        "icon": "\ud83e\udd1d",
+        "title": "Community Events",
+        "description": "Town halls, meet-and-greets, and neighborhood forums where Jane connects directly with the people she'll serve."
+      }
+    ],
+    "secondaryMessage": "This campaign is funded entirely by people like you — neighbors, friends, and community members who believe in a better District 5. We don't take corporate PAC money."
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "items": [
+      {
+        "month": "Apr",
+        "day": "12",
+        "title": "Community Town Hall",
+        "time": "6:00 PM – 8:00 PM",
+        "location": "Maplewood Community Center, 123 Oak St",
+        "description": "Join Jane for an open town hall to discuss the issues that matter most to District 5. All are welcome!"
+      },
+      {
+        "month": "Apr",
+        "day": "19",
+        "title": "Neighborhood Canvass Kickoff",
+        "time": "10:00 AM – 1:00 PM",
+        "location": "Campaign HQ, 456 Main St",
+        "description": "Help us knock on doors and talk to voters! Training provided — no experience necessary."
+      },
+      {
+        "month": "Apr",
+        "day": "26",
+        "title": "Fundraising Dinner",
+        "time": "7:00 PM – 9:30 PM",
+        "location": "Riverside Banquet Hall, 789 River Rd",
+        "description": "An evening of food, community, and conversation. Tickets available at the door or online."
+      },
+      {
+        "month": "May",
+        "day": "03",
+        "title": "Park Cleanup & Meet and Greet",
+        "time": "9:00 AM – 12:00 PM",
+        "location": "Lincoln Park, 321 Elm Ave",
+        "description": "Roll up your sleeves and join Jane for a community cleanup, followed by refreshments and conversation."
+      }
+    ]
+  },
+  "contact": {
+    "email": "info@smithforcouncil.com",
+    "phone": "(555) 123-4567",
+    "address": {
+      "street": "456 Main Street",
+      "city": "Springfield, ST 12345"
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/smithforcouncil",
+    "twitter": "https://twitter.com/smithforcouncil",
+    "instagram": "https://instagram.com/smithforcouncil"
+  },
+  "disclaimer": "Paid for by Friends of Jane Smith. Not authorized by any other candidate or committee."
+}

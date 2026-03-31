@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-page="home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Website</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="google-fonts" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand" id="nav-brand"></a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="endorsements.html">Endorsements</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-text">
+          <h1 id="hero-name"></h1>
+          <p class="hero-office" id="hero-office"></p>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <a href="#about" class="learn-more">Learn More &darr;</a>
+        </div>
+        <div class="hero-photo" id="hero-photo">
+          <div class="hero-photo-placeholder">Candidate Photo<br>400 × 500px</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <h2 id="about-title"></h2>
+        <hr class="accent-rule">
+        <div id="about-content"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUICK ISSUES PREVIEW ========== -->
+  <section class="issues-preview" id="issues-preview">
+    <div class="container">
+      <div class="issues-preview-inner">
+        <div id="issues-preview-cards"></div>
+        <a href="issues.html" class="text-link">See All Issues &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-disclaimer" id="footer-disclaimer"></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

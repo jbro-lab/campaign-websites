@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Website</title>
+  <meta name="description" content="">
+
+  <!-- Google Fonts — dynamically updated by JS from content.json -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="google-fonts" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-brand" id="nav-brand"></a>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#endorsements">Endorsements</a></li>
+        <li><a href="#volunteer">Get Involved</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#donate" class="nav-donate-btn">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <p class="hero-office" id="hero-office"></p>
+        <h1 id="hero-name"></h1>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-donate" id="hero-donate-btn">Donate Now</a>
+          <a href="#volunteer" class="btn btn-outline">Get Involved</a>
+        </div>
+      </div>
+      <div class="hero-image fade-in" id="hero-image-container">
+        <div class="hero-image-placeholder">
+          Candidate Photo<br>(600 × 750px)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / BIO SECTION ========== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="about-title"></h2>
+      </div>
+      <div class="about-grid">
+        <div class="fade-in" id="about-image-container">
+          <div class="about-image-placeholder">
+            Candidate Photo<br>(500 × 600px)
+          </div>
+        </div>
+        <div class="about-text fade-in" id="about-text"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ISSUES / PRIORITIES SECTION ========== -->
+  <section id="issues" class="issues">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="issues-title"></h2>
+      </div>
+      <div class="issues-grid" id="issues-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== ENDORSEMENTS SECTION ========== -->
+  <section id="endorsements" class="endorsements">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="endorsements-title"></h2>
+      </div>
+      <div class="endorsements-grid" id="endorsements-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== GET INVOLVED / VOLUNTEER SECTION ========== -->
+  <section id="volunteer" class="get-involved">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="volunteer-title"></h2>
+      </div>
+      <div class="fade-in" id="volunteer-content"></div>
+    </div>
+  </section>
+
+  <!-- ========== DONATE SECTION ========== -->
+  <section id="donate" class="donate">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="donate-title"></h2>
+      </div>
+      <div class="fade-in" id="donate-content"></div>
+    </div>
+  </section>
+
+  <!-- ========== EVENTS SECTION ========== -->
+  <section id="events" class="events">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="events-title"></h2>
+      </div>
+      <div class="events-list" id="events-list"></div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER / CONTACT ========== -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid" id="footer-grid"></div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer" id="footer-disclaimer"></p>
+        <a href="#hero" class="back-to-top">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

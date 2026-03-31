@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Website</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="google-fonts" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION (transparent, becomes solid on scroll) ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="nav-brand" id="nav-brand"></a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#endorsements">Endorsements</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#cta" class="nav-donate-btn">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO — Full viewport split ========== -->
+  <section class="hero" id="hero">
+    <!-- Left: candidate photo (background-image via JS or placeholder) -->
+    <div class="hero-photo" id="hero-photo">
+      <div class="hero-photo-placeholder">Candidate Photo<br>1200 × 900px</div>
+    </div>
+    <!-- Right: bold color block with text -->
+    <div class="hero-text">
+      <p class="hero-office" id="hero-office"></p>
+      <h1 id="hero-name"></h1>
+      <p class="hero-tagline" id="hero-tagline"></p>
+      <a href="#" class="btn btn-hero-donate" id="hero-donate-btn">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- ========== PRIORITIES BAR ========== -->
+  <div class="priorities-bar" id="priorities-bar"></div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo" id="about-photo">
+          <div class="about-photo-placeholder">About Photo<br>500 × 500px</div>
+        </div>
+        <div class="about-text">
+          <h2 id="about-title" class="fade-in"></h2>
+          <div id="about-content" class="fade-in"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ISSUES — Alternating rows ========== -->
+  <section class="issues-section" id="issues">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="issues-title"></h2>
+      </div>
+      <div id="issues-rows"></div>
+    </div>
+  </section>
+
+  <!-- ========== ENDORSEMENTS — Dark section with horizontal scroll ========== -->
+  <section class="endorsements-section" id="endorsements">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="endorsements-title"></h2>
+      </div>
+    </div>
+    <div class="endorsements-scroll" id="endorsements-scroll"></div>
+  </section>
+
+  <!-- ========== GET INVOLVED CTA ========== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <h2 id="cta-title" class="fade-in"></h2>
+      <p id="cta-description" class="fade-in"></p>
+      <div class="cta-buttons fade-in">
+        <a href="#" class="btn btn-outline" id="cta-volunteer-btn">Volunteer</a>
+        <a href="#" class="btn btn-cta-donate" id="cta-donate-btn">Donate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EVENTS — Timeline ========== -->
+  <section class="events-section" id="events">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 id="events-title"></h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social" id="footer-social"></div>
+        <div class="footer-contact" id="footer-contact"></div>
+        <a href="#hero" class="back-to-top">Back to Top ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer" id="footer-disclaimer"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
