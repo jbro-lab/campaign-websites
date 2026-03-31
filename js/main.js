@@ -50,15 +50,16 @@
     var page = document.documentElement.getAttribute('data-page') || 'home';
     var contactHref = data.contact && data.contact.ctaHref ? data.contact.ctaHref : '#';
     var links = [
-      { text: 'Home', href: 'index.html', page: 'home' },
-      { text: 'Templates', href: 'index.html#templates', page: '' },
-      { text: 'Portfolio', href: 'index.html#portfolio', page: '' },
-      { text: 'Pricing', href: 'pricing.html', page: 'pricing' }
+      { text: 'Home', href: 'index.html', page: 'home', section: '' },
+      { text: 'Templates', href: 'index.html#templates', page: '', section: 'templates' },
+      { text: 'Portfolio', href: 'index.html#portfolio', page: '', section: 'portfolio' },
+      { text: 'Pricing', href: 'pricing.html', page: 'pricing', section: '' }
     ];
 
     var navLinksHtml = links.map(function (link) {
       var activeClass = link.page && link.page === page ? ' active' : '';
-      return '<li><a href="' + esc(link.href) + '" class="' + activeClass + '">' + esc(link.text) + '</a></li>';
+      var sectionAttr = link.section ? ' data-section="' + link.section + '"' : '';
+      return '<li><a href="' + esc(link.href) + '" class="' + activeClass + '"' + sectionAttr + '>' + esc(link.text) + '</a></li>';
     }).join('');
 
     navLinksHtml += '<li><a href="' + esc(contactHref) + '" class="nav-cta">Get Started</a></li>';
@@ -350,6 +351,58 @@
     pricing: renderPricing
   };
 
+  /* ---- Scroll Spy ---- */
+  function initScrollSpy() {
+    var page = document.documentElement.getAttribute('data-page') || 'home';
+    if (page !== 'home') return;
+
+    var navEl = document.getElementById('nav-links');
+    if (!navEl) return;
+
+    var sectionLinks = navEl.querySelectorAll('a[data-section]');
+    var homeLink = navEl.querySelector('a:not([data-section]):not(.nav-cta)');
+    var sections = [];
+
+    sectionLinks.forEach(function (link) {
+      var id = link.getAttribute('data-section');
+      var el = document.getElementById(id);
+      if (el) sections.push({ el: el, link: link });
+    });
+
+    if (sections.length === 0) return;
+
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        ticking = false;
+        var scrollY = window.scrollY + 120;
+        var activeLink = null;
+
+        for (var i = sections.length - 1; i >= 0; i--) {
+          if (sections[i].el.offsetTop <= scrollY) {
+            activeLink = sections[i].link;
+            break;
+          }
+        }
+
+        // Clear all active states
+        if (homeLink) homeLink.classList.remove('active');
+        sectionLinks.forEach(function (l) { l.classList.remove('active'); });
+
+        if (activeLink) {
+          activeLink.classList.add('active');
+        } else if (homeLink) {
+          homeLink.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   /* ---- Fade-in Animations ---- */
   function initFadeAnimations() {
     var fadeElements = document.querySelectorAll('.fade-in');
@@ -399,6 +452,7 @@
         if (renderer) renderer(data);
 
         initFadeAnimations();
+        initScrollSpy();
       })
       .catch(function (err) {
         console.error('Failed to load content.json:', err);
