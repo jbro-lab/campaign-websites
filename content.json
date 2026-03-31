@@ -74,7 +74,7 @@
       "id": "single-page",
       "name": "Single Page",
       "description": "Everything on one scrolling page. Perfect for first-time candidates who want a clean, simple presence.",
-      "demoHref": "../single-page/index.html",
+      "demoHref": "campaign-templates/single-page-hero/index.html",
       "screenshotSrc": "",
       "features": ["Single scroll", "Quick setup", "All-in-one"]
     },
@@ -82,7 +82,7 @@
       "id": "multi-page",
       "name": "Multi-Page",
       "description": "Dedicated pages for issues, endorsements, events, and more. Ideal for candidates with a detailed platform.",
-      "demoHref": "../multi-page/index.html",
+      "demoHref": "campaign-templates/multi-page-hero/index.html",
       "screenshotSrc": "",
       "features": ["Multiple pages", "Issue detail", "Event calendar"]
     },
@@ -90,7 +90,7 @@
       "id": "bold-hero",
       "name": "Bold Hero",
       "description": "A striking full-screen hero image with bold typography. Makes a strong first impression.",
-      "demoHref": "../template-3-bold-hero/index.html",
+      "demoHref": "campaign-templates/bold-hero/index.html",
       "screenshotSrc": "",
       "features": ["Full-screen hero", "Bold typography", "High impact"]
     },
@@ -98,7 +98,7 @@
       "id": "clean-minimal",
       "name": "Clean Minimal",
       "description": "Understated elegance with clean lines and plenty of whitespace. Lets your message breathe.",
-      "demoHref": "../template-4-clean-minimal/index.html",
+      "demoHref": "campaign-templates/clean-minimal/index.html",
       "screenshotSrc": "",
       "features": ["Minimal design", "Clean layout", "Professional"]
     },
@@ -106,7 +106,7 @@
       "id": "community-focus",
       "name": "Community Focus",
       "description": "Warm, approachable design centered on community connection and grassroots engagement.",
-      "demoHref": "../template-5-community-focus/index.html",
+      "demoHref": "campaign-templates/community-focus/index.html",
       "screenshotSrc": "",
       "features": ["Community feel", "Warm tones", "Grassroots"]
     }
