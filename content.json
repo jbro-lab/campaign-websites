@@ -74,7 +74,7 @@
       "id": "single-page",
       "name": "Single Page",
       "description": "Everything on one scrolling page. Perfect for first-time candidates who want a clean, simple presence.",
-      "demoHref": "campaign-templates/single-page-hero/index.html",
+      "demoHref": "/campaign-templates/single-page-hero/index.html",
       "screenshotSrc": "",
       "features": ["Single scroll", "Quick setup", "All-in-one"]
     },
@@ -82,7 +82,7 @@
       "id": "multi-page",
       "name": "Multi-Page",
       "description": "Dedicated pages for issues, endorsements, events, and more. Ideal for candidates with a detailed platform.",
-      "demoHref": "campaign-templates/multi-page-hero/index.html",
+      "demoHref": "/campaign-templates/multi-page-hero/index.html",
       "screenshotSrc": "",
       "features": ["Multiple pages", "Issue detail", "Event calendar"]
     },
@@ -90,7 +90,7 @@
       "id": "bold-hero",
       "name": "Bold Hero",
       "description": "A striking full-screen hero image with bold typography. Makes a strong first impression.",
-      "demoHref": "campaign-templates/bold-hero/index.html",
+      "demoHref": "/campaign-templates/bold-hero/index.html",
       "screenshotSrc": "",
       "features": ["Full-screen hero", "Bold typography", "High impact"]
     },
@@ -98,7 +98,7 @@
       "id": "clean-minimal",
       "name": "Clean Minimal",
       "description": "Understated elegance with clean lines and plenty of whitespace. Lets your message breathe.",
-      "demoHref": "campaign-templates/clean-minimal/index.html",
+      "demoHref": "/campaign-templates/clean-minimal/index.html",
       "screenshotSrc": "",
       "features": ["Minimal design", "Clean layout", "Professional"]
     },
@@ -106,7 +106,7 @@
       "id": "community-focus",
       "name": "Community Focus",
       "description": "Warm, approachable design centered on community connection and grassroots engagement.",
-      "demoHref": "campaign-templates/community-focus/index.html",
+      "demoHref": "/campaign-templates/clean-minimal/index.html",
       "screenshotSrc": "",
       "features": ["Community feel", "Warm tones", "Grassroots"]
     }
@@ -120,9 +120,9 @@
   "contact": {
     "title": "Ready to Launch Your Campaign Site?",
     "subtitle": "Get in touch and we'll have your site live in days.",
-    "email": "hello@speedycampaignwebsites.com",
+    "email": "hello@speedycampaignsites.com",
     "ctaText": "Get Started",
-    "ctaHref": "mailto:hello@speedycampaignwebsites.com?subject=Campaign%20Website%20Inquiry"
+    "ctaHref": "mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry"
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
@@ -148,7 +148,7 @@
           "Content updates after delivery"
         ],
         "ctaText": "Get Started",
-        "ctaHref": "mailto:hello@speedycampaignwebsites.com?subject=Self-Hosted%20Plan%20Inquiry"
+        "ctaHref": "mailto:hello@speedycampaignsites.com?subject=Self-Hosted%20Plan%20Inquiry"
       },
       {
         "name": "Managed",
@@ -168,7 +168,7 @@
         ],
         "excludes": ["Domain registration (we'll help you pick one)"],
         "ctaText": "Get Started",
-        "ctaHref": "mailto:hello@speedycampaignwebsites.com?subject=Managed%20Plan%20Inquiry"
+        "ctaHref": "mailto:hello@speedycampaignsites.com?subject=Managed%20Plan%20Inquiry"
       }
     ],
     "disclaimer": "All campaign content — including issue positions, biography, endorsements, and messaging — must be provided by the campaign. Speedy Campaign Websites builds and maintains the technical website only. We do not author, endorse, or take responsibility for any political content or messaging displayed on sites we build.",
@@ -207,7 +207,7 @@
       { "text": "Pricing", "href": "pricing.html" },
       {
         "text": "Get Started",
-        "href": "mailto:hello@speedycampaignwebsites.com?subject=Campaign%20Website%20Inquiry"
+        "href": "mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry"
       }
     ],
     "copyright": "Speedy Campaign Websites",
