@@ -758,7 +758,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ---- Responsive: 992px ---- */
 @media (max-width: 992px) {
   .features-grid,
-  .templates-grid,
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
