@@ -1,4 +1,4 @@
-# Image Placeholders — Single Page Template
+# Image Placeholders — Single Page Hero Template
 
 Place your campaign images in this folder. Below are the recommended sizes for each image slot.
 

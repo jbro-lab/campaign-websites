@@ -4,17 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A collection of 5 campaign website templates for down-ballot political candidates. No frameworks, no build tools — pure HTML, CSS, and vanilla JavaScript. All content is loaded dynamically from a `content.json` file per template.
+A collection of 6 campaign website templates for down-ballot political candidates. No frameworks, no build tools — pure HTML, CSS, and vanilla JavaScript. All content is loaded dynamically from a `content.json` file per template.
 
 ## Templates
 
 | Template | Directory | Type | Visual Identity |
 |----------|-----------|------|-----------------|
-| Single Page | `single-page/` | Single page | Standard campaign, smooth scroll nav |
-| Multi Page | `multi-page/` | 6 HTML pages | Traditional multi-page with separate issue/endorsement/event pages |
+| Single Page Hero | `single-page-hero/` | Single page | Standard campaign, smooth scroll nav |
+| Multi-Page Hero | `multi-page-hero/` | 6 HTML pages | Traditional multi-page with separate issue/endorsement/event pages |
 | Bold Hero | `template-3-bold-hero/` | Single page | Split hero (60/40), transparent-to-solid nav, horizontal scroll endorsements, timeline events |
 | Clean & Minimal | `template-4-clean-minimal/` | 6 HTML pages | Minimal whitespace-heavy design, non-sticky nav, single-column layouts |
 | Community Focus | `template-5-community-focus/` | Single page | Gradient hero with circular photo, masonry endorsements, accordion issues, sticky rounded nav |
+| Grassroots | `grassroots/` | Single page | Full-width hero with image overlay, stats bar, tabbed issues, endorsement carousel, horizontal-scroll events |
 
 ## Architecture
 
@@ -34,7 +35,7 @@ template-folder/
 - All user-facing text is injected via JS — never edit HTML for content changes
 - XSS protection: all text is escaped via the `esc()` helper (creates a text node, reads innerHTML)
 
-### Multi-Page Detection (multi-page and template-4)
+### Multi-Page Detection (multi-page-hero and template-4)
 - Each HTML page has `data-page="pagename"` on `<html>`
 - JS reads `document.documentElement.getAttribute('data-page')` and dispatches to `PAGE_RENDERERS[page](data)`
 - Nav/footer are rendered on every page; page-specific content only renders on its page
@@ -56,10 +57,11 @@ All templates share the same theming approach:
 ```
 
 ### Font Pairings Per Template
-- single-page, multi-page: Merriweather + Inter
+- single-page-hero, multi-page-hero: Merriweather + Inter
 - template-3: Oswald + Source Sans Pro
 - template-4: Libre Baskerville + Inter
 - template-5: Nunito + Open Sans
+- grassroots: Poppins + Lato
 
 ## Key Patterns
 
@@ -69,6 +71,7 @@ All templates share the same theming approach:
 - **Template-specific features**:
   - Template 3: scroll listener toggles `.navbar.scrolled` class at `scrollY > 80` for transparent-to-solid nav
   - Template 5: `initAccordion()` toggles `.open` class and sets `maxHeight` on accordion bodies
+  - Grassroots: `renderIssueTabs()` for tabbed issue display, `renderCarousel()` for endorsement carousel with autoplay, `stats` array in content.json for stats bar
 
 ## Testing
 
@@ -82,4 +85,4 @@ No build step or test suite. To verify changes:
 - **Change content**: Edit `content.json` only — never hardcode text in HTML
 - **Add a new palette**: Add an entry to the `PALETTES` object in `main.js`
 - **Add a new section**: Add HTML shell with IDs to `index.html`, add rendering logic in `renderContent()` in `main.js`, add corresponding data to `content.json`
-- **Template-specific JSON fields**: Template 3 has `priorities` array; Template 5 has `candidate.location`, `about.whyRunning`/`whyRunningText`, and `volunteer.actions` array
+- **Template-specific JSON fields**: Template 3 has `priorities` array; Template 5 has `candidate.location`, `about.whyRunning`/`whyRunningText`, and `volunteer.actions` array; Grassroots has `stats` array (number + label objects)

@@ -71,16 +71,16 @@
   },
   "templates": [
     {
-      "id": "single-page",
-      "name": "Single Page",
+      "id": "single-page-hero",
+      "name": "Single Page Hero",
       "description": "Everything on one scrolling page. Perfect for first-time candidates who want a clean, simple presence.",
       "demoHref": "/campaign-templates/single-page-hero/index.html",
       "screenshotSrc": "",
       "features": ["Single scroll", "Quick setup", "All-in-one"]
     },
     {
-      "id": "multi-page",
-      "name": "Multi-Page",
+      "id": "multi-page-hero",
+      "name": "Multi-Page Hero",
       "description": "Dedicated pages for issues, endorsements, events, and more. Ideal for candidates with a detailed platform.",
       "demoHref": "/campaign-templates/multi-page-hero/index.html",
       "screenshotSrc": "",

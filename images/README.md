@@ -6,7 +6,7 @@ Place template screenshot images in this directory and update `screenshotSrc` in
 - **Width**: 1280px
 - **Aspect ratio**: 16:10 (1280×800)
 - **Format**: PNG or JPEG
-- **Naming**: match the template `id` from content.json (e.g., `single-page.png`, `multi-page.png`)
+- **Naming**: match the template `id` from content.json (e.g., `single-page-hero.png`, `multi-page-hero.png`)
 
 ## How to capture
 1. Open each template demo in a browser at 1280px wide

@@ -4,8 +4,8 @@ Ready-to-use website templates for down-ballot political candidates — school b
 
 **Two templates included:**
 
-- **`single-page/`** — Modern single-page site with smooth scroll navigation. All content on one page.
-- **`multi-page/`** — Traditional multi-page site with separate pages for issues, endorsements, events, donate, and contact/volunteer.
+- **`single-page-hero/`** — Modern single-page site with smooth scroll navigation. All content on one page.
+- **`multi-page-hero/`** — Traditional multi-page site with separate pages for issues, endorsements, events, donate, and contact/volunteer.
 
 Both templates are fully responsive (desktop, tablet, mobile), use the same color palette system, and are designed to be customized in under 30 minutes by editing a single JSON file.
 
@@ -13,7 +13,7 @@ Both templates are fully responsive (desktop, tablet, mobile), use the same colo
 
 ## Quick Start
 
-1. Pick a template (`single-page/` or `multi-page/`)
+1. Pick a template (`single-page-hero/` or `multi-page-hero/`)
 2. Copy the template folder — this becomes your candidate's site
 3. Open `content.json` and replace the placeholder content with your own
 4. Open `index.html` in a browser to preview
@@ -92,7 +92,7 @@ Add, remove, or edit issue cards in the `issues.items` array:
         "icon": "\ud83c\udfeb",
         "title": "Better Schools",
         "description": "Short description shown on the card.",
-        "detail": "Longer description shown on the multi-page issues page."
+        "detail": "Longer description shown on the multi-page-hero issues page."
       }
     ]
   }
@@ -276,14 +276,14 @@ Each template has placeholder divs where images go. To add your actual photos:
 
 ```
 campaign-templates/
-├── single-page/
+├── single-page-hero/
 │   ├── index.html          ← HTML shell (populated by JS)
 │   ├── content.json        ← ALL content lives here — edit this file!
 │   ├── css/styles.css      ← Styles + color palette definitions
 │   ├── js/main.js          ← Loads content.json, renders everything
 │   └── images/             ← Put your photos here
 │
-├── multi-page/
+├── multi-page-hero/
 │   ├── index.html          ← Home: hero + about
 │   ├── issues.html         ← Issues/priorities
 │   ├── endorsements.html   ← Endorsement quotes
