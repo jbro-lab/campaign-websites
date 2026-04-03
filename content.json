@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Speedy Campaign Websites",
-    "metaDescription": "Professional campaign websites built fast. Fixed pricing, mobile-first, ready in days — not weeks. Templates designed for local and state races."
+    "metaDescription": "Professional campaign websites built fast. Fixed pricing, mobile-friendly, ready in days — not weeks. Templates designed for local and state races."
   },
   "theme": {
     "colors": {
@@ -23,7 +23,7 @@
   "hero": {
     "eyebrow": "Campaign Websites, Done Right",
     "headline": "Your Campaign Deserves a Website That Works as Hard as You Do",
-    "subheadline": "Professional, mobile-first campaign websites built in days — not weeks. Fixed pricing. No surprises.",
+    "subheadline": "Professional, mobile-friendly campaign websites built in days — not weeks. Fixed pricing. No surprises.",
     "primaryCta": {
       "text": "See Templates",
       "href": "#templates"
@@ -45,7 +45,7 @@
       {
         "icon": "📱",
         "title": "Mobile-First",
-        "description": "Over 70% of voters browse on their phones. Every template is built mobile-first."
+        "description": "Most voters browse on their phones. Every template is built mobile-friendly."
       },
       {
         "icon": "💲",
@@ -195,7 +195,7 @@
       },
       {
         "question": "Can I update the site myself?",
-        "answer": "The sites are built with a simple content file (JSON) that controls all text. If you're comfortable editing a text file, you can make updates yourself. On Managed plans, just email us changes and we'll handle it."
+        "answer": "Yes! Every site is built with plain HTML — no databases, no CMS logins, no complicated systems. If you're comfortable editing an HTML file, you can make changes directly. On Managed plans, just email us your updates and we'll handle it for you."
       }
     ]
   },

@@ -339,6 +339,46 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+/* ---- How It Works Steps ---- */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  counter-reset: step;
+}
+
+.step-card {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.step-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.step-card p {
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
 /* ---- Template Cards ---- */
 .templates-grid {
   display: grid;
@@ -758,7 +798,8 @@ h1, h2, h3, h4, h5, h6 {
 /* ---- Responsive: 992px ---- */
 @media (max-width: 992px) {
   .features-grid,
-  .portfolio-grid {
+  .portfolio-grid,
+  .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -816,7 +857,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   .features-grid,
   .templates-grid,
-  .portfolio-grid {
+  .portfolio-grid,
+  .steps-grid {
     grid-template-columns: 1fr;
   }
 
