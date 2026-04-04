@@ -885,6 +885,122 @@ section {
 }
 
 /* ============================================================
+   PALETTE PICKER
+   ============================================================ */
+
+.palette-picker {
+  position: fixed;
+  bottom: 74px; /* above the preview banner */
+  right: 24px;
+  z-index: 9999;
+  font-family: var(--font-body);
+}
+
+.palette-picker-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 16px;
+  padding: 12px 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.palette-picker-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.3);
+}
+
+.palette-picker-btn svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.palette-picker-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.palette-picker-panel {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 180px;
+}
+
+.palette-picker-panel.open {
+  display: block;
+}
+
+.palette-picker-panel h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555;
+  font-family: inherit;
+}
+
+.palette-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  background: none;
+  width: 100%;
+  font-family: inherit;
+}
+
+.palette-option:hover {
+  background: #f5f5f5;
+}
+
+.palette-option.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.palette-swatches {
+  display: flex;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.palette-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.palette-option-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 
@@ -1018,4 +1134,8 @@ section {
     flex-direction: column;
     gap: 4px;
   }
+
+  .palette-picker { bottom: 64px; right: 16px; }
+  .palette-picker-btn { padding: 10px 12px; border-radius: 14px; }
+  .palette-picker-btn svg { width: 24px; height: 24px; }
 }

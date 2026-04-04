@@ -29,6 +29,18 @@ var PALETTES = {
     '--color-bg-alt': '#faf5f5',
     '--color-white': '#ffffff'
   },
+  'blue-gold': {
+    '--color-primary': '#2563EB',
+    '--color-primary-dark': '#1D4ED8',
+    '--color-primary-light': '#EFF6FF',
+    '--color-secondary': '#D97706',
+    '--color-secondary-dark': '#B45309',
+    '--color-text': '#1a1a1a',
+    '--color-text-light': '#555555',
+    '--color-bg': '#ffffff',
+    '--color-bg-alt': '#f8fafc',
+    '--color-white': '#ffffff'
+  },
   'green-cream': {
     '--color-primary': '#1E6B45',
     '--color-primary-dark': '#155235',
@@ -39,6 +51,18 @@ var PALETTES = {
     '--color-text-light': '#555555',
     '--color-bg': '#fffdf7',
     '--color-bg-alt': '#f5f0e8',
+    '--color-white': '#ffffff'
+  },
+  'slate-teal': {
+    '--color-primary': '#334155',
+    '--color-primary-dark': '#1E293B',
+    '--color-primary-light': '#F1F5F9',
+    '--color-secondary': '#0D9488',
+    '--color-secondary-dark': '#0F766E',
+    '--color-text': '#1a1a1a',
+    '--color-text-light': '#555555',
+    '--color-bg': '#ffffff',
+    '--color-bg-alt': '#f8fafc',
     '--color-white': '#ffffff'
   }
 };
@@ -442,6 +466,77 @@ function initFadeAnimations() {
   }
 }
 
+// --- Palette Picker ---
+var PALETTE_DISPLAY = {
+  "navy-red":    { name: "Navy & Red",    colors: ["#1B3A5C","#C42032","#E8EEF4"] },
+  "red-navy":    { name: "Red & Navy",    colors: ["#8B1A1A","#1B3A5C","#F7E8E8"] },
+  "blue-gold":   { name: "Blue & Copper", colors: ["#2563EB","#D97706","#EFF6FF"] },
+  "green-cream": { name: "Green & Cream", colors: ["#1E6B45","#B45309","#ECFDF5"] },
+  "slate-teal":  { name: "Slate & Teal",  colors: ["#334155","#0D9488","#F1F5F9"] }
+};
+
+function initPalettePicker(currentPalette) {
+  var picker = document.createElement("div");
+  picker.className = "palette-picker";
+
+  var btnSvg = "<svg viewBox=\"0 0 24 24\"><path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\"/></svg>";
+
+  picker.innerHTML =
+    "<button class=\"palette-picker-btn\" aria-label=\"Change color palette\">" +
+      btnSvg +
+      "<span class=\"palette-picker-label\">Palette</span>" +
+    "</button>" +
+    "<div class=\"palette-picker-panel\">" +
+      "<h4>Choose a Palette</h4>" +
+      "<div class=\"palette-options\"></div>" +
+    "</div>";
+
+  var btn = picker.querySelector(".palette-picker-btn");
+  var panel = picker.querySelector(".palette-picker-panel");
+  var optionsContainer = picker.querySelector(".palette-options");
+
+  Object.keys(PALETTE_DISPLAY).forEach(function(key) {
+    var info = PALETTE_DISPLAY[key];
+    var opt = document.createElement("button");
+    opt.className = "palette-option" + (key === currentPalette ? " active" : "");
+    opt.setAttribute("data-palette", key);
+
+    var swatches = info.colors.map(function(c) {
+      return "<span class=\"palette-swatch\" style=\"background:" + c + "\"></span>";
+    }).join("");
+
+    opt.innerHTML =
+      "<span class=\"palette-swatches\">" + swatches + "</span>" +
+      "<span class=\"palette-option-name\">" + info.name + "</span>";
+
+    opt.addEventListener("click", function() {
+      var colors = PALETTES[key];
+      Object.keys(colors).forEach(function(prop) {
+        document.documentElement.style.setProperty(prop, colors[prop]);
+      });
+      optionsContainer.querySelectorAll(".palette-option").forEach(function(o) {
+        o.classList.remove("active");
+      });
+      opt.classList.add("active");
+    });
+
+    optionsContainer.appendChild(opt);
+  });
+
+  btn.addEventListener("click", function(e) {
+    e.stopPropagation();
+    panel.classList.toggle("open");
+  });
+
+  document.addEventListener("click", function(e) {
+    if (!picker.contains(e.target)) {
+      panel.classList.remove("open");
+    }
+  });
+
+  document.body.appendChild(picker);
+}
+
 // --- Main ---
 document.addEventListener('DOMContentLoaded', function () {
   // Hamburger menu
@@ -498,4 +593,5 @@ document.addEventListener('DOMContentLoaded', function () {
   applyTheme({ palette: palette });
   renderContent(data);
   initFadeAnimations();
+  initPalettePicker(palette);
 });
