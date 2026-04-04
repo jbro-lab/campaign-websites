@@ -1,12 +1,11 @@
 /* ============================================
-   Speedy Campaign Websites — Interactivity
+   Speedy Campaign Sites — Interactivity
    ============================================ */
 
 (function () {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function () {
-
     // --- Mobile hamburger menu ---
     var hamburger = document.getElementById('hamburger');
     var navLinks = document.getElementById('nav-links');
@@ -29,7 +28,9 @@
 
     // --- Scroll spy (home page section highlighting) ---
     var sectionLinks = document.querySelectorAll('#nav-links a[data-section]');
-    var homeLink = document.querySelector('#nav-links a[href="index.html"]:not(.nav-cta)');
+    var homeLink = document.querySelector(
+      '#nav-links a[href="index.html"]:not(.nav-cta)'
+    );
     var sections = [];
 
     sectionLinks.forEach(function (link) {
@@ -56,7 +57,9 @@
           }
 
           if (homeLink) homeLink.classList.remove('active');
-          sectionLinks.forEach(function (l) { l.classList.remove('active'); });
+          sectionLinks.forEach(function (l) {
+            l.classList.remove('active');
+          });
 
           if (activeLink) {
             activeLink.classList.add('active');
@@ -74,18 +77,25 @@
     var fadeElements = document.querySelectorAll('.fade-in');
 
     if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      );
 
-      fadeElements.forEach(function (el) { observer.observe(el); });
+      fadeElements.forEach(function (el) {
+        observer.observe(el);
+      });
     } else {
-      fadeElements.forEach(function (el) { el.classList.add('visible'); });
+      fadeElements.forEach(function (el) {
+        el.classList.add('visible');
+      });
     }
 
     // --- FAQ accordion ---
@@ -97,11 +107,15 @@
         var isActive = item.classList.contains('active');
 
         // Close all
-        document.querySelectorAll('.faq-item.active').forEach(function (openItem) {
-          openItem.classList.remove('active');
-          openItem.querySelector('.faq-answer').style.maxHeight = null;
-          openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
+        document
+          .querySelectorAll('.faq-item.active')
+          .forEach(function (openItem) {
+            openItem.classList.remove('active');
+            openItem.querySelector('.faq-answer').style.maxHeight = null;
+            openItem
+              .querySelector('.faq-question')
+              .setAttribute('aria-expanded', 'false');
+          });
 
         // Toggle clicked
         if (!isActive) {
@@ -111,6 +125,5 @@
         }
       });
     });
-
   });
 })();

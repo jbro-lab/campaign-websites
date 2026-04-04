@@ -17,12 +17,12 @@ var PALETTES = {
     '--color-bg-alt': '#f5f7fa',
     '--color-white': '#ffffff'
   },
-  'red-navy': {
+  'red-gold': {
     '--color-primary': '#8B1A1A',
     '--color-primary-dark': '#6B1414',
     '--color-primary-light': '#F7E8E8',
-    '--color-secondary': '#1B3A5C',
-    '--color-secondary-dark': '#122840',
+    '--color-secondary': '#C9A84C',
+    '--color-secondary-dark': '#A8893D',
     '--color-text': '#1a1a1a',
     '--color-text-light': '#555555',
     '--color-bg': '#ffffff',
@@ -105,7 +105,7 @@ function titleCase(str) {
 function pickPalette(party) {
   var p = (party || '').toLowerCase();
   if (p.indexOf('democrat') !== -1) return 'navy-red';
-  if (p.indexOf('republican') !== -1) return 'red-navy';
+  if (p.indexOf('republican') !== -1) return 'red-gold';
   return 'green-cream';
 }
 
@@ -469,7 +469,7 @@ function initFadeAnimations() {
 // --- Palette Picker ---
 var PALETTE_DISPLAY = {
   "navy-red":    { name: "Navy & Red",    colors: ["#1B3A5C","#C42032","#E8EEF4"] },
-  "red-navy":    { name: "Red & Navy",    colors: ["#8B1A1A","#1B3A5C","#F7E8E8"] },
+  "red-gold":    { name: "Red & Gold",     colors: ["#8B1A1A","#C9A84C","#F7E8E8"] },
   "blue-gold":   { name: "Blue & Copper", colors: ["#2563EB","#D97706","#EFF6FF"] },
   "green-cream": { name: "Green & Cream", colors: ["#1E6B45","#B45309","#ECFDF5"] },
   "slate-teal":  { name: "Slate & Teal",  colors: ["#334155","#0D9488","#F1F5F9"] }
