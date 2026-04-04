@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Speedy Campaign Websites",
+    "title": "Speedy Campaign Sites",
     "metaDescription": "Professional campaign websites built fast. Fixed pricing, mobile-friendly, ready in days — not weeks. Templates designed for local and state races."
   },
   "theme": {
@@ -34,7 +34,7 @@
     }
   },
   "valueProp": {
-    "title": "Why Speedy Campaign Websites?",
+    "title": "Why Speedy Campaign Sites?",
     "subtitle": "We build websites for candidates who need to hit the ground running.",
     "features": [
       {
@@ -171,7 +171,7 @@
         "ctaHref": "mailto:hello@speedycampaignsites.com?subject=Managed%20Plan%20Inquiry"
       }
     ],
-    "disclaimer": "All campaign content — including issue positions, biography, endorsements, and messaging — must be provided by the campaign. Speedy Campaign Websites builds and maintains the technical website only. We do not author, endorse, or take responsibility for any political content or messaging displayed on sites we build.",
+    "disclaimer": "All campaign content — including issue positions, biography, endorsements, and messaging — must be provided by the campaign. Speedy Campaign Sites builds and maintains the technical website only. We do not author, endorse, or take responsibility for any political content or messaging displayed on sites we build.",
     "faq": [
       {
         "question": "What do I need to provide?",
@@ -210,7 +210,7 @@
         "href": "mailto:hello@speedycampaignsites.com?subject=Campaign%20Website%20Inquiry"
       }
     ],
-    "copyright": "Speedy Campaign Websites",
-    "legal": "Speedy Campaign Websites is a web development service. We do not author, endorse, or take responsibility for any political content displayed on websites we build."
+    "copyright": "Speedy Campaign Sites",
+    "legal": "Speedy Campaign Sites is a web development service. We do not author, endorse, or take responsibility for any political content displayed on websites we build."
   }
 }
