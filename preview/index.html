@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Website Preview</title>
+  <meta name="description" content="Preview your campaign website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="google-fonts" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="nav-brand" id="nav-brand"></a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#endorsements">Endorsements</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#volunteer">Get Involved</a></li>
+        <li><a href="#donate" class="nav-donate-btn">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-office" id="hero-office"></p>
+        <h1 id="hero-name"></h1>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="hero-buttons">
+          <a href="#volunteer" class="btn btn-secondary">Get Involved</a>
+          <a href="#donate" class="btn btn-outline-white">Donate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <section class="stats-bar" id="stats-bar">
+    <div class="container">
+      <div class="stats-grid" id="stats-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-image" id="about-image">
+          <div class="about-image-placeholder">Candidate Photo<br>500 x 600px</div>
+        </div>
+        <div class="about-text">
+          <h2 id="about-title" class="fade-in"></h2>
+          <div id="about-content" class="fade-in"></div>
+          <a href="#issues" class="btn btn-primary fade-in">See My Priorities</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ISSUES ========== -->
+  <section class="issues-section" id="issues">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="issues-title"></h2>
+      </div>
+      <div class="issues-tabs" id="issues-tabs"></div>
+      <div class="issues-panel" id="issues-panel"></div>
+    </div>
+  </section>
+
+  <!-- ========== ENDORSEMENTS ========== -->
+  <section class="endorsements-section" id="endorsements">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="endorsements-title"></h2>
+      </div>
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carousel-track"></div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <button class="carousel-btn carousel-prev" aria-label="Previous endorsement">&lsaquo;</button>
+        <button class="carousel-btn carousel-next" aria-label="Next endorsement">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EVENTS ========== -->
+  <section class="events-section" id="events">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="events-title"></h2>
+      </div>
+      <div class="events-scroll-wrapper">
+        <div class="events-scroll" id="events-scroll"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VOLUNTEER ========== -->
+  <section class="volunteer-section" id="volunteer">
+    <div class="container">
+      <div class="volunteer-content fade-in">
+        <h2 id="volunteer-title"></h2>
+        <p id="volunteer-description"></p>
+        <a id="volunteer-btn" href="#" class="btn btn-primary">Sign Up to Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DONATE ========== -->
+  <section class="donate-section" id="donate">
+    <div class="container">
+      <div class="donate-content fade-in">
+        <h2 id="donate-title"></h2>
+        <p id="donate-description"></p>
+        <a id="donate-btn" href="#" class="btn btn-secondary">Contribute Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 id="footer-brand"></h3>
+          <p id="footer-tagline"></p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div id="footer-contact"></div>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div id="footer-social"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer" id="footer-disclaimer"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== PREVIEW CTA BANNER ========== -->
+  <div class="preview-banner">
+    <div class="preview-banner-content">
+      <span class="preview-banner-text">This is a preview</span>
+      <span class="preview-banner-sep">&mdash;</span>
+      <a href="https://speedycampaignsites.com" class="preview-banner-link">Get your site built at speedycampaignsites.com</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
